@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "olTY4kW8Ccdnn1SZWymcFtFOtX+Xde9XPzxMan7pTAEJIPdjMUQaAmflO5SLEWwHuhwsd2sXwYtMn5kdAI6vCw==",
+  "dgSpecHash": "1i/hDc7Bd76KULK/AERzLl/Fsg6sXFptP915wWxk2xrSoS6bxc8nWQ2t5rUuj8UxU90TrZ/1kPNDd7JjSCe0vA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Armando\\source\\repos\\TesisProject\\Tesis\\Tesis.csproj",
+  "projectFilePath": "C:\\Users\\Armando\\source\\repos\\TesisProject\\tesis\\Tesis.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Armando\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Armando\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

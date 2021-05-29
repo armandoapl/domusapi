@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Armando\\source\\repos\\TesisProject\\Tesis\\Tesis.csproj": {}
+    "C:\\Users\\Armando\\source\\repos\\TesisProject\\tesis\\Tesis.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Armando\\source\\repos\\TesisProject\\Tesis\\Tesis.csproj": {
+    "C:\\Users\\Armando\\source\\repos\\TesisProject\\tesis\\Tesis.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Armando\\source\\repos\\TesisProject\\Tesis\\Tesis.csproj",
+        "projectUniqueName": "C:\\Users\\Armando\\source\\repos\\TesisProject\\tesis\\Tesis.csproj",
         "projectName": "Tesis",
-        "projectPath": "C:\\Users\\Armando\\source\\repos\\TesisProject\\Tesis\\Tesis.csproj",
+        "projectPath": "C:\\Users\\Armando\\source\\repos\\TesisProject\\tesis\\Tesis.csproj",
         "packagesPath": "C:\\Users\\Armando\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Armando\\source\\repos\\TesisProject\\Tesis\\obj\\",
+        "outputPath": "C:\\Users\\Armando\\source\\repos\\TesisProject\\tesis\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Armando\\AppData\\Roaming\\NuGet\\NuGet.Config",
