@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Tesis.Data;
 
-namespace Tesis.Data.Migrations
+namespace Tesis.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20210616230538_AddingFieldsToREProperty")]
+    partial class AddingFieldsToREProperty
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -42,8 +44,7 @@ namespace Tesis.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Introduction")
-                        .HasMaxLength(420)
-                        .HasColumnType("nvarchar(420)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("KnownAs")
                         .HasColumnType("nvarchar(max)");
@@ -75,26 +76,26 @@ namespace Tesis.Data.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int?>("AppUserId")
+                    b.Property<bool>("IsMain")
+                        .HasColumnType("bit");
+
+                    b.Property<int?>("PropertyId")
                         .HasColumnType("int");
 
-                    b.Property<int>("IsMain")
-                        .HasColumnType("int");
+                    b.Property<string>("PublicId")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("PublicId")
-                        .HasColumnType("int");
+                    b.Property<string>("Url")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("REPropertyId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Url")
+                    b.Property<int?>("UserId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("AppUserId");
+                    b.HasIndex("PropertyId");
 
-                    b.HasIndex("REPropertyId");
+                    b.HasIndex("UserId");
 
                     b.ToTable("Photos");
                 });
@@ -102,6 +103,14 @@ namespace Tesis.Data.Migrations
             modelBuilder.Entity("Tesis.Entities.REProperty", b =>
                 {
                     b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Address")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("AppUserId")
                         .HasColumnType("int");
 
                     b.Property<string>("City")
@@ -113,42 +122,40 @@ namespace Tesis.Data.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("OwnerId")
-                        .HasColumnType("int");
+                    b.Property<string>("Title")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("OwnerId");
+                    b.HasIndex("AppUserId");
 
                     b.ToTable("Properties");
                 });
 
             modelBuilder.Entity("Tesis.Entities.Photo", b =>
                 {
-                    b.HasOne("Tesis.Entities.AppUser", null)
+                    b.HasOne("Tesis.Entities.REProperty", "Property")
                         .WithMany("Photos")
-                        .HasForeignKey("AppUserId");
+                        .HasForeignKey("PropertyId");
 
-                    b.HasOne("Tesis.Entities.REProperty", null)
+                    b.HasOne("Tesis.Entities.AppUser", "User")
                         .WithMany("Photos")
-                        .HasForeignKey("REPropertyId");
+                        .HasForeignKey("UserId");
+
+                    b.Navigation("Property");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Tesis.Entities.REProperty", b =>
                 {
                     b.HasOne("Tesis.Entities.AppUser", "Agent")
                         .WithMany("Properties")
-                        .HasForeignKey("Id")
+                        .HasForeignKey("AppUserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Tesis.Entities.AppUser", "Owner")
-                        .WithMany()
-                        .HasForeignKey("OwnerId");
-
                     b.Navigation("Agent");
-
-                    b.Navigation("Owner");
                 });
 
             modelBuilder.Entity("Tesis.Entities.AppUser", b =>

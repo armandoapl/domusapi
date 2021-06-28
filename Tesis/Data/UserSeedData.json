@@ -1,0 +1,332 @@
+﻿[
+  {
+    "UserName": "Fisher",
+    "LegalId": "0",
+    "DateOfBirth": "1980-07-03",
+    "KnownAs": "Fisher",
+    "Created": "2020-01-19",
+    "LastActive": "2020-06-19",
+    "Gender": "male",
+    "Introduction": "Est laboris dolore incididunt qui excepteur cupidatat sunt minim tempor deserunt qui. Laborum ullamco elit occaecat tempor ex enim irure adipisicing Lorem. Deserunt ullamco consequat id officia. Incididunt eu culpa non ullamco qui magna exercitation ex quis fugiat amet aliquip culpa.\r\n",
+    "City": "Clarence",
+    "Country": "Russian Federation",
+    "Photos": [
+      {
+        "Url": "https://randomuser.me/api/portraits/men/64.jpg",
+        "IsMain": true
+      }
+    ],
+    "Properties": [
+      {
+        "Title": "Title Example",
+        "Description": "Ullamco officia quis excepteur excepteur consequat magna tempor irure eu excepteur deserunt duis dolore sunt. Non irure consequat ex sint veniam dolore. Ad adipisicing in pariatur velit amet reprehenderit aliquip qui. Quis anim voluptate non sit ut mollit labore ipsum nostrud sunt sunt est sit. Proident ut labore ad qui ex consectetur aute enim culpa ad duis proident sit deserunt.\r\n",
+        "City": "Coloma",
+        "Country": "Niger",
+        "Address" :  "Calle 1 carrera 22, local 147238.4",
+        "Photos": [
+          {
+            "Url": "C:Users/Armando/source/repos/TesisProject/houseImages/property1.jpg",
+            "IsMain": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "UserName": "Osborne",
+    "LegalId": "1",
+    "DateOfBirth": "1981-04-08",
+    "KnownAs": "Osborne",
+    "Created": "2019-04-22",
+    "LastActive": "2020-05-29",
+    "Gender": "male",
+    "Introduction": "Dolor nostrud ullamco excepteur voluptate duis laborum amet deserunt. Qui aute et dolor consequat. Minim aliqua aliqua et consequat consectetur ipsum ut. Ullamco eu anim aute enim velit aliquip esse. Sit quis cillum sit nostrud anim. Cillum ex deserunt cupidatat est veniam irure amet elit velit sunt pariatur est.\r\n",
+    "City": "Allison",
+    "Country": "Mali",
+    "Photos": [
+      {
+        "Url": "https://randomuser.me/api/portraits/men/3.jpg",
+        "IsMain": true
+      }
+    ],
+    "Properties": [
+      {
+        "Title": "Title Example",
+        "Description": "Culpa eiusmod enim exercitation dolore commodo pariatur culpa ullamco pariatur. Magna consequat sint do incididunt non sunt consequat eu tempor Lorem officia deserunt ut magna. Deserunt quis do veniam ea minim est. Veniam eiusmod esse commodo esse reprehenderit irure eiusmod nisi incididunt. Nulla aute velit mollit cillum in occaecat ullamco mollit anim.\r\n",
+        "City": "Frystown",
+        "Country": "Nicaragua",
+        "Address": "Calle 1 carrera 22, local 147238.4",
+        "Photos": [
+          {
+            "Url": "C:Users/Armando/source/repos/TesisProject/houseImages/property1.jpg",
+            "IsMain": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "UserName": "Rodriquez",
+    "LegalId": "2",
+    "DateOfBirth": "1969-09-05",
+    "KnownAs": "Rodriquez",
+    "Created": "2020-05-29",
+    "LastActive": "2020-05-13",
+    "Gender": "male",
+    "Introduction": "Deserunt deserunt laborum nulla Lorem officia aliquip do quis ea. Ex aliqua nisi anim irure sunt non ad est commodo voluptate cupidatat. Excepteur cillum ad id proident. Sit eiusmod quis incididunt irure sunt reprehenderit adipisicing proident. Incididunt dolor anim culpa nulla reprehenderit ullamco velit eu dolor. Officia aute dolore enim laborum. Aliquip sint deserunt ullamco eu deserunt veniam aute.\r\n",
+    "City": "Loomis",
+    "Country": "Fiji",
+    "Photos": [
+      {
+        "Url": "https://randomuser.me/api/portraits/men/19.jpg",
+        "IsMain": true
+      }
+    ],
+    "Properties": [
+      {
+        "Title": "Title Example",
+        "Description": "Labore laborum non ex et tempor consectetur in occaecat adipisicing quis cupidatat anim minim amet. Ea ad eu enim nulla occaecat aliquip mollit. Nisi dolore anim ex proident consequat pariatur voluptate do minim ullamco cillum Lorem. Dolore incididunt ad amet id ea sunt culpa anim non mollit. In id incididunt ad aliqua consectetur consectetur eiusmod pariatur aliqua enim ad quis.\r\n",
+        "City": "Orviston",
+        "Country": "Libya",
+        "Address": "Calle 1 carrera 22, local 147238.4",
+        "Photos": [
+          {
+            "Url": "C:Users/Armando/source/repos/TesisProject/houseImages/property1.jpg",
+            "IsMain": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "UserName": "Levine",
+    "LegalId": "3",
+    "DateOfBirth": "1990-08-31",
+    "KnownAs": "Levine",
+    "Created": "2020-02-13",
+    "LastActive": "2020-05-22",
+    "Gender": "male",
+    "Introduction": "Do reprehenderit id sit eu laborum id tempor nostrud. Exercitation eu veniam anim incididunt amet ut in tempor. Deserunt eiusmod eiusmod ullamco sit sit exercitation culpa eiusmod nostrud culpa id ipsum excepteur. Ullamco tempor est in veniam. Irure nostrud quis mollit aliqua. Cupidatat incididunt aliqua tempor laboris aute voluptate ea amet do officia eiusmod minim. In quis est laboris excepteur dolor esse.\r\n",
+    "City": "Wedgewood",
+    "Country": "Laos",
+    "Photos": [
+      {
+        "Url": "https://randomuser.me/api/portraits/men/62.jpg",
+        "IsMain": true
+      }
+    ],
+    "Properties": [
+      {
+        "Title": "Title Example",
+        "Description": "Dolore non consequat cupidatat est sint minim reprehenderit non laborum quis incididunt ut veniam aliqua. Nostrud ad esse culpa aliquip velit sit aliqua aliqua exercitation deserunt deserunt nisi. Proident ut consectetur duis velit do aliquip dolore.\r\n",
+        "City": "Gardners",
+        "Country": "Uganda",
+        "Address": "Calle 1 carrera 22, local 147238.4",
+        "Photos": [
+          {
+            "Url": "C:Users/Armando/source/repos/TesisProject/houseImages/property1.jpg",
+            "IsMain": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "UserName": "Chang",
+    "LegalId": "4",
+    "DateOfBirth": "1991-02-04",
+    "KnownAs": "Chang",
+    "Created": "2019-01-14",
+    "LastActive": "2020-05-27",
+    "Gender": "male",
+    "Introduction": "Pariatur ex eiusmod ex occaecat sit mollit ullamco amet velit eiusmod. Cupidatat quis incididunt tempor est qui eu aliqua ea ad quis non cillum mollit. Exercitation fugiat amet amet excepteur irure labore nisi culpa aute.\r\n",
+    "City": "Remington",
+    "Country": "Qatar",
+    "Photos": [
+      {
+        "Url": "https://randomuser.me/api/portraits/men/89.jpg",
+        "IsMain": true
+      }
+    ],
+    "Properties": [
+      {
+        "Title": "Title Example",
+        "Description": "Tempor cillum nisi excepteur nisi commodo. Laborum amet minim aliquip tempor fugiat tempor ut cupidatat enim. Deserunt eiusmod laborum adipisicing consectetur enim exercitation anim dolore tempor. Velit Lorem velit tempor consequat. Consequat id exercitation ipsum nisi. Dolore eu laboris quis sunt sint irure ut id fugiat amet culpa mollit sit.\r\n",
+        "City": "Guthrie",
+        "Country": "Algeria",
+        "Address": "Calle 1 carrera 22, local 147238.4",
+        "Photos": [
+          {
+            "Url": "C:Users/Armando/source/repos/TesisProject/houseImages/property1.jpg",
+            "IsMain": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "UserName": "Theresa",
+    "LegalId": "5",
+    "DateOfBirth": "1963-10-10",
+    "KnownAs": "Theresa",
+    "Created": "2020-02-09",
+    "LastActive": "2020-06-15",
+    "Gender": "female",
+    "Introduction": "Lorem mollit laborum aliqua eu deserunt eiusmod sint culpa esse labore reprehenderit esse eiusmod ea. Voluptate incididunt ex amet culpa proident veniam in cupidatat nostrud laboris quis sunt esse anim. Nulla laboris sunt id exercitation voluptate commodo ex do cillum dolor officia enim. Magna sit tempor dolore proident sint et reprehenderit commodo incididunt.\r\n",
+    "City": "Ilchester",
+    "Country": "Madagascar",
+    "Photos": [
+      {
+        "Url": "https://randomuser.me/api/portraits/women/7.jpg",
+        "IsMain": true
+      }
+    ],
+    "Properties": [
+      {
+        "Title": "Title Example",
+        "Description": "Amet deserunt laboris do nisi. Quis nisi magna qui exercitation deserunt voluptate aute exercitation culpa. Aute ex excepteur et sit ullamco commodo aute do incididunt elit reprehenderit ullamco irure. Fugiat anim eiusmod culpa nostrud ipsum magna nostrud elit sunt do aliquip sit. Ex Lorem ad labore tempor in laboris voluptate officia. Ad ullamco esse deserunt esse. Duis Lorem nostrud eiusmod eiusmod duis aliqua irure adipisicing elit.\r\n",
+        "City": "Dalton",
+        "Country": "United States",
+        "Address": "Calle 1 carrera 22, local 147238.4",
+        "Photos": [
+          {
+            "Url": "C:Users/Armando/source/repos/TesisProject/houseImages/property1.jpg",
+            "IsMain": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "UserName": "Mitzi",
+    "LegalId": "6",
+    "DateOfBirth": "1955-02-18",
+    "KnownAs": "Mitzi",
+    "Created": "2020-03-14",
+    "LastActive": "2020-06-23",
+    "Gender": "female",
+    "Introduction": "Mollit eu dolore cupidatat proident in nulla Lorem voluptate esse ex. Ea enim deserunt nisi deserunt adipisicing. Ea anim nostrud laborum consectetur aute exercitation do aliquip nulla dolor adipisicing. Aliqua id duis laborum veniam eu. Dolor amet in nulla ullamco laboris non dolore aliqua aliqua minim id ea.\r\n",
+    "City": "Sterling",
+    "Country": "Cameroon",
+    "Photos": [
+      {
+        "Url": "https://randomuser.me/api/portraits/women/3.jpg",
+        "IsMain": true
+      }
+    ],
+    "Properties": [
+      {
+        "Title": "Title Example",
+        "Description": "Aliquip enim reprehenderit adipisicing eiusmod. Proident dolore ut tempor veniam fugiat do irure. Sunt officia commodo ad ullamco aute veniam quis eiusmod. Culpa qui excepteur esse ut pariatur do veniam ut aliqua veniam ea ex culpa consequat. Enim anim laborum sint velit ex.\r\n",
+        "City": "Yonah",
+        "Country": "Togo",
+        "Address": "Calle 1 carrera 22, local 147238.4",
+        "Photos": [
+          {
+            "Url": "C:Users/Armando/source/repos/TesisProject/houseImages/property1.jpg",
+            "IsMain": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "UserName": "Melanie",
+    "LegalId": "7",
+    "DateOfBirth": "1973-11-21",
+    "KnownAs": "Melanie",
+    "Created": "2019-05-29",
+    "LastActive": "2020-06-27",
+    "Gender": "female",
+    "Introduction": "Velit et dolor qui eiusmod ipsum occaecat sunt adipisicing occaecat sunt ut aliquip ullamco. Occaecat do qui ad qui Lorem aliquip magna eu. Qui occaecat veniam consectetur sit nulla. Aute magna cillum quis cupidatat elit commodo adipisicing minim cillum reprehenderit amet veniam. Officia tempor ad fugiat eiusmod. Pariatur sunt magna ad incididunt mollit dolore deserunt labore nulla dolor. Ipsum occaecat laborum est in pariatur ullamco ex laborum ipsum nulla minim nostrud laborum non.\r\n",
+    "City": "Albany",
+    "Country": "Bermuda",
+    "Photos": [
+      {
+        "Url": "https://randomuser.me/api/portraits/women/67.jpg",
+        "IsMain": true
+      }
+    ],
+    "Properties": [
+      {
+        "Title": "Title Example",
+        "Description": "Nulla in adipisicing commodo in enim velit sit aute do magna dolore occaecat exercitation adipisicing. Labore laborum nostrud et nostrud do tempor ex mollit consequat voluptate nulla do ad. Aliquip commodo excepteur eiusmod exercitation occaecat aliquip exercitation. Pariatur eu duis proident commodo cupidatat incididunt ex laboris. Tempor amet sit labore proident eu nostrud deserunt sint ullamco velit in aute.\r\n",
+        "City": "Kaka",
+        "Country": "American Samoa",
+        "Address": "Calle 1 carrera 22, local 147238.4",
+        "Photos": [
+          {
+            "Url": "C:UsersArmandosource\reposTesisProjecthouseImages",
+            "IsMain": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "UserName": "Nita",
+    "LegalId": "8",
+    "DateOfBirth": "1966-12-31",
+    "KnownAs": "Nita",
+    "Created": "2020-04-21",
+    "LastActive": "2020-06-12",
+    "Gender": "female",
+    "Introduction": "Labore fugiat occaecat consectetur nostrud officia elit excepteur labore duis consequat sint. Ut eiusmod labore occaecat nulla qui ullamco quis aliquip enim veniam. Consectetur ea esse ullamco ipsum pariatur id. Aute elit ut exercitation enim aute id eiusmod aliqua sint tempor.\r\n",
+    "City": "Bawcomville",
+    "Country": "Cocos (Keeling Islands)",
+    "Photos": [
+      {
+        "Url": "https://randomuser.me/api/portraits/women/17.jpg",
+        "IsMain": true
+      }
+    ],
+    "Properties": [
+      {
+        "Title": "Title Example",
+        "Description": "Tempor et consequat veniam consectetur non deserunt quis exercitation et duis incididunt commodo elit fugiat. Aliquip ea consequat in eu proident eiusmod labore quis excepteur nulla do voluptate velit. Dolor ea et laboris occaecat Lorem ex mollit ullamco incididunt tempor. Cupidatat dolor labore aute sint sunt tempor labore elit incididunt occaecat incididunt occaecat ea duis. Dolore nulla labore consectetur minim reprehenderit irure aliqua. Exercitation non excepteur pariatur ad nulla enim excepteur quis dolore et. Consectetur ut aliquip excepteur adipisicing incididunt.\r\n",
+        "City": "Blodgett",
+        "Country": "San Marino",
+        "Address": "Calle 1 carrera 22, local 147238.4",
+        "Photos": [
+          {
+            "Url": "C:Users/Armando/source/repos/TesisProject/houseImages/property1.jpg",
+            "IsMain": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "UserName": "Rosella",
+    "LegalId": "9",
+    "DateOfBirth": "1952-01-26",
+    "KnownAs": "Rosella",
+    "Created": "2020-02-13",
+    "LastActive": "2020-05-18",
+    "Gender": "female",
+    "Introduction": "Cupidatat proident cupidatat dolor minim laborum ex aliqua non magna labore officia. Sit minim velit eiusmod id pariatur incididunt cupidatat duis laboris. Do ex tempor adipisicing occaecat nulla dolore sit esse. Aute anim et non et duis anim incididunt elit.\r\n",
+    "City": "Hollins",
+    "Country": "Colombia",
+    "Photos": [
+      {
+        "Url": "https://randomuser.me/api/portraits/women/17.jpg",
+        "IsMain": true
+      }
+    ],
+    "Properties": [
+      {
+        "Title": "Title Example",
+        "Description": "Deserunt laboris exercitation cupidatat cillum aute Lorem proident irure occaecat laboris. Aliquip ut nisi et laborum sint aliqua do consequat cupidatat. Labore duis cillum cillum eu esse id labore excepteur. Do ad ut minim elit consectetur exercitation nostrud officia reprehenderit magna tempor voluptate qui. Ex dolore mollit occaecat proident commodo aliqua voluptate. Nulla nostrud ut cupidatat excepteur eu culpa ullamco fugiat tempor ea labore laborum.\r\n",
+        "City": "Fresno",
+        "Country": "Senegal",
+        "Address": "Calle 1 carrera 22, local 147238.4",
+        "Photos": [
+          {
+            "Url": "C:Users/Armando/source/repos/TesisProject/houseImages/property1.jpg",
+            "IsMain": true
+          }
+        ]
+      }
+    ]
+  }
+]

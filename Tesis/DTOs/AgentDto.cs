@@ -10,6 +10,7 @@ namespace Tesis.DTOs
     {
         public int Id { get; set; }
         public string UserName { get; set; }
+        public string PhotoUrl { get; set; } // to be set as the main photo
         public string LegalId { get; set; }// cedula, string
         public int age { get; set; }
         public string KnownAs { get; set; }
