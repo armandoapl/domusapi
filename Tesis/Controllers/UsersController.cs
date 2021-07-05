@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
+using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using Tesis.DTOs;
@@ -105,7 +106,57 @@ namespace Tesis.Controllers
 
             return BadRequest("Problem Adding the Photo.");
 
+        }
 
+        [Authorize]
+        [HttpPut("set-main-photo/{photoId}")]
+        public async Task<ActionResult> SetMainPhoto(int photoId)
+        {
+            var user = await _userRepo.GetUserByUsernameAsync(User.GetUserName());
+            var photo = user.Photos.FirstOrDefault(ph => ph.Id == photoId);
+            
+            if (photo.IsMain) 
+                return BadRequest("This is already your main photo");
+
+            var currentMain = user.Photos.FirstOrDefault(ph => ph.IsMain);
+
+            if (currentMain != null)
+                currentMain.IsMain = false;
+
+            photo.IsMain = true;
+
+            if (await _userRepo.SaveAllAsync())
+                return NoContent();
+           
+
+            return BadRequest("Faild to set main photo");
+        }
+
+        [Authorize]
+        [HttpDelete("delete-photo/{photoId}")]
+        public async Task<ActionResult> DeletePhoto(int photoId)
+        {
+            var user = await _userRepo.GetUserByUsernameAsync(User.GetUserName());
+            var photo = user.Photos.FirstOrDefault(ph => ph.Id == photoId);
+
+            if (photo == null)
+                return NotFound();
+
+            if (photo.IsMain)
+                return BadRequest("Your cannot delete your main photo");
+
+            if(photo.PublicId != null)
+            {
+                var results = await _photoService.DeletePhotoAsync(photo.PublicId);
+                if (results.Error != null)
+                    return BadRequest(results.Error.Message);
+            }
+
+            user.Photos.Remove(photo);
+
+            if (await _userRepo.SaveAllAsync()) return Ok();
+
+            return BadRequest("Failed to delete the photos");
         }
     }
 }

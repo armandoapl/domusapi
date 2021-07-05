@@ -59,6 +59,7 @@ namespace Tesis.Data
             return await _context.SaveChangesAsync() > 0? true: false;
         }
 
+
         public void Update(AppUser user)
         {
             _context.Entry(user).State = EntityState.Modified;
@@ -74,7 +75,7 @@ namespace Tesis.Data
         public async Task<AgentDto> GetAgentByUsernameAsync(string username)
         {
             return await _context.Users
-                .Where(x => x.UserName == username)
+                .Where(x => x.UserName == username).Include(x => x.Photos)
                 .ProjectTo<AgentDto>(_mapper.ConfigurationProvider).
                 SingleOrDefaultAsync();
         
