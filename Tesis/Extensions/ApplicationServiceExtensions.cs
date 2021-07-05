@@ -12,10 +12,13 @@ namespace Tesis.Extensions
     {
         public static IServiceCollection AddApplicationServices(this IServiceCollection services, IConfiguration config) 
         {
+            
             services.AddDbContext<DataContext>(options => {
                 options.UseSqlServer(config.GetConnectionString("DefaultConnection"));
             });
 
+            services.Configure<CloudinarySettings>(config.GetSection("CloudinarySettings"));
+            services.AddScoped<IPhotoService, PhotoService>();
             /*Repository and its interfaces*/
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IPropertyRepository, PropertyRepository>();

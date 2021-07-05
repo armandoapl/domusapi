@@ -71,3 +71,6 @@ C:\Users\Armando\source\repos\TesisProject\tesis\obj\Debug\net5.0\Tesis.dll
 C:\Users\Armando\source\repos\TesisProject\tesis\obj\Debug\net5.0\ref\Tesis.dll
 C:\Users\Armando\source\repos\TesisProject\tesis\obj\Debug\net5.0\Tesis.pdb
 C:\Users\Armando\source\repos\TesisProject\tesis\obj\Debug\net5.0\Tesis.genruntimeconfig.cache
+C:\Users\Armando\source\repos\TesisProject\Tesis\bin\Debug\net5.0\CloudinaryDotNet.dll
+C:\Users\Armando\source\repos\TesisProject\Tesis\bin\Debug\net5.0\Microsoft.Extensions.WebEncoders.dll
+C:\Users\Armando\source\repos\TesisProject\Tesis\bin\Debug\net5.0\Newtonsoft.Json.dll
