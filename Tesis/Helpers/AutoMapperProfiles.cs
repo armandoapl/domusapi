@@ -36,6 +36,7 @@ namespace Tesis.Helpers
                             )
                 );
 
+            CreateMap<RegisterDto, AppUser>();
 
             CreateMap<Photo, PhotoDto>();
         }
