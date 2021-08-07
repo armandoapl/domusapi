@@ -6,6 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Tesis.DTOs;
 using Tesis.Entities;
+using Tesis.Helpers;
 using Tesis.Interfaces;
 
 namespace Tesis.Data
@@ -65,11 +66,13 @@ namespace Tesis.Data
             _context.Entry(user).State = EntityState.Modified;
         }
 
-        public async Task<IEnumerable<AgentDto>> GetAgentsAsync()
+        public async Task<PagedList<AgentDto>> GetAgentsAsync(UserPropertiesParams userParams)
         {
-            return await _context.Users
+            var query = _context.Users
                 .ProjectTo<AgentDto>(_mapper.ConfigurationProvider)
-                .ToListAsync();
+                .AsNoTracking();
+
+            return await PagedList<AgentDto>.CreateAsync(query, userParams.PageNumber, userParams.PageSize);
         }
 
         public async Task<AgentDto> GetAgentByUsernameAsync(string username)

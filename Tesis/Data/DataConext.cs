@@ -10,6 +10,12 @@ namespace Tesis.Data
         public DbSet<REProperty> Properties { get; set; }
         public DbSet<Photo> Photos { get; set; }
 
-
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<REProperty>()
+                        .HasMany<Photo>(property => property.Photos)
+                        .WithOne(photo => photo.Property)
+                        .OnDelete(DeleteBehavior.Cascade);
+        }
     }
 }

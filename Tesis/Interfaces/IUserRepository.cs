@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Tesis.DTOs;
 using Tesis.Entities;
+using Tesis.Helpers;
 
 namespace Tesis.Interfaces
 {
@@ -16,7 +17,7 @@ namespace Tesis.Interfaces
         Task AddUserAsync(AppUser user);
         Task<bool> UserExistsAsync(string username);
         Task<bool> SaveAllAsync();
-        Task<IEnumerable<AgentDto>> GetAgentsAsync();
+        Task<PagedList<AgentDto>> GetAgentsAsync(UserPropertiesParams userparams);
         Task<AgentDto> GetAgentByUsernameAsync(string username);
     }
 }

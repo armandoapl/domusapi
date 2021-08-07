@@ -9,7 +9,9 @@ using System.Threading.Tasks;
 using Tesis.DTOs;
 using Tesis.Entities;
 using Tesis.Extensions;
+using Tesis.Helpers;
 using Tesis.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
 namespace Tesis.Controllers
 {
@@ -27,24 +29,24 @@ namespace Tesis.Controllers
 
         [Authorize]
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<AgentDto>>> GetUsers()
+        public async Task<ActionResult<IEnumerable<AgentDto>>> GetUsers([FromQuery] UserPropertiesParams userParams)
         {
+            var users = await _userRepo.GetAgentsAsync(userParams);
+
+            Response.AddPaginatioHeader(users.CurrentPage, users.PageSize, users.TotalCount, users.TotalPages);
+
+            return Ok(users);
+
             //    var users = await _userRepo.GetUsersAsync();
             //    var usersToReturn = _mapper.Map<IEnumerable<AgentDto>>(users);
 
             //    return Ok(usersToReturn);
-            return Ok(await _userRepo.GetAgentsAsync());
         }
 
         [Authorize]
         [HttpGet("{username}", Name ="GetUser")]
         public async Task<ActionResult<AgentDto>> GetUser(string username)
         {
-            //var user = await _userRepo.GetUserByUsernameAsync(username);
-            //var userToReturn = _mapper.Map<AgentDto>(user);
-
-            //return Ok(userToReturn);
-
             return await _userRepo.GetAgentByUsernameAsync(username);
         }
 

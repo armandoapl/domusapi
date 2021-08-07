@@ -13,7 +13,7 @@ namespace Tesis.DTOs
         public string City { get; set; }
         public string Country { get; set; }
         public int AppUserId { get; set; }
-        public string Adress { get; set; }
+        public string Address { get; set; }
         public DateTime CreatedAt { get; set; }
         public string PhotoUrl { get; set; }
         public ICollection<PhotoDto> Photos { get; set; }

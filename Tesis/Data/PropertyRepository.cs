@@ -8,17 +8,21 @@ using Tesis.DTOs;
 using AutoMapper.QueryableExtensions;
 using AutoMapper;
 using System.Linq;
+using System;
+using Tesis.Helpers;
 
 namespace Tesis.Data
 {
     public class PropertyRepository : IPropertyRepository
     {
         private readonly DataContext _context;
-        private readonly IMapper _mapper;
-        public PropertyRepository(DataContext context, IMapper mapper)
+        private readonly IMapper _mapper; 
+        private readonly IPhotoService _photoService;
+        public PropertyRepository(DataContext context, IMapper mapper, IPhotoService photoService)
         {
             _context = context;
             _mapper = mapper;
+            _photoService = photoService;
         }
 
         public async Task<IEnumerable<REProperty>> GetPropertiesAsync()
@@ -44,11 +48,12 @@ namespace Tesis.Data
         }
 
 
-        public async Task<IEnumerable<PropertyDto>> GetPropertiesDtoAsync()
+        public async Task<PagedList<PropertyDto>> GetPropertiesDtoAsync(UserPropertiesParams propertiesParams)
         {
-            return await  _context.Properties
-                .ProjectTo<PropertyDto>(_mapper.ConfigurationProvider)
-                .ToListAsync();
+            var query =  _context.Properties
+                .ProjectTo<PropertyDto>(_mapper.ConfigurationProvider).AsNoTracking();
+
+            return await PagedList<PropertyDto>.CreateAsync(query, propertiesParams.PageNumber, propertiesParams.PageSize);
         }
 
 
@@ -58,6 +63,52 @@ namespace Tesis.Data
                 .Where( p=> p.Id == id)
                 .ProjectTo<PropertyDto>(_mapper.ConfigurationProvider)
                 .FirstOrDefaultAsync();
+        }
+
+        public async Task<PropertyDto> AddPropertyAsync(PropertyDto property)
+        {
+            var propertyToRegister = new REProperty();
+            propertyToRegister.Title = property.Title;
+            propertyToRegister.Description = property.Description;
+            propertyToRegister.City = property.City;
+            propertyToRegister.Country = property.Country;
+            propertyToRegister.AppUserId = property.AppUserId;
+            propertyToRegister.Address = property.Address;
+            propertyToRegister.CreatedAt = DateTime.Now;
+
+             
+            await _context.Properties.AddAsync(propertyToRegister);
+             if (await _context.SaveChangesAsync() > 0)
+             {
+                property.Id = propertyToRegister.Id;
+                return property;
+             }
+            else{
+                throw new Exception("Could'n save the property");
+            }
+        }
+
+        public async Task<bool> DeletePropertyAsync(int propertyId)
+        {
+            var propertyToDelete = await GetPropertyByIdAsync(propertyId);
+            _context.Remove(propertyToDelete);
+
+            //var photos = propertyToDelete.Photos;
+
+            //if(photos != null)
+            //{
+            //    foreach(Photo photo in photos)
+            //    {
+            //        var results = await _photoService.DeletePhotoAsync(photo.PublicId);
+            //        if (results.Error == null)
+            //            throw new Exception("Problema al borrar fotos de la propiedad numero " + propertyToDelete.Id);
+            //    }
+            //}
+
+            if (await SaveAllAsync())
+                return true;
+            else return false;
+
         }
     }
  }

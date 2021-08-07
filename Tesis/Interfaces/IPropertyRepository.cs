@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using Tesis.DTOs;
 using Tesis.Entities;
+using Tesis.Helpers;
 
 namespace Tesis.Interfaces
 {
@@ -12,6 +13,8 @@ namespace Tesis.Interfaces
         Task<REProperty> GetPropertyByIdAsync(int id);
         Task<bool> SaveAllAsync();
         Task<PropertyDto> GetPropertyDtoByIdAsync(int id);
-        Task<IEnumerable<PropertyDto>> GetPropertiesDtoAsync();
+        Task<PagedList<PropertyDto>> GetPropertiesDtoAsync(UserPropertiesParams propertiesParams);
+        Task<PropertyDto> AddPropertyAsync(PropertyDto property);
+        Task<bool> DeletePropertyAsync(int propertyId);
     }
 }
