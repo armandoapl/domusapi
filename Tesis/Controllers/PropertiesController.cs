@@ -27,10 +27,18 @@ namespace Tesis.Controllers
         }
 
         [Authorize]
+        [HttpPost]
+        public async Task<ActionResult<PropertyDto>> RegisterProperty(PropertyDto property)
+        {
+            var propertyToReturn = await _propertyRepo.AddPropertyAsync(property);
+
+            return Ok(propertyToReturn);
+        }
+
+        [Authorize]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<PropertyDto>>> GetProperties([FromQuery] UserPropertiesParams userParams)
         {
-
             var properties = await _propertyRepo.GetPropertiesDtoAsync(userParams);
 
             Response.AddPaginatioHeader(properties.CurrentPage, properties.PageSize, properties.TotalCount, properties.TotalPages);
@@ -42,20 +50,14 @@ namespace Tesis.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<PropertyDto>> GetProperty(int id)
         {
-            //var property = await _propertyRepo.GetPropertyByIdAsync(id);
-            //var propertyToReturn = _mapper.Map<PropertyDto>(property);
-            //return Ok(propertyToReturn);
             return Ok(await _propertyRepo.GetPropertyDtoByIdAsync(id));
         }
 
         [Authorize]
-        [HttpPost]
-        public async Task<ActionResult<PropertyDto>> RegisterProperty( PropertyDto property)
+        [HttpPut]
+        public async Task<ActionResult> UpdateProperty(int idProperty)
         {
-            var propertyToReturn = await _propertyRepo.AddPropertyAsync(property);
-            
-            return Ok(propertyToReturn);
-            
+            return Ok();
         }
 
         [Authorize]
@@ -64,14 +66,9 @@ namespace Tesis.Controllers
         {
             var response =await  _propertyRepo.DeletePropertyAsync(propertyId);
 
-
-
-
-
-
             if (response == true)
             {
-                return Ok("Property Deleted Succesfully");
+                return NoContent();
             }
             else
             {
@@ -79,8 +76,6 @@ namespace Tesis.Controllers
             }
             
         }
-
-
 
         [Authorize]
         [HttpPost("add-photo/{propertyId}")]
@@ -113,11 +108,7 @@ namespace Tesis.Controllers
             }
 
             return BadRequest("Problem Adding the Photo.");
-
         }
-
-
-
 
         [Authorize]
         [HttpPut("set-main-photo/{photoId}/{propertyId}")]
@@ -139,7 +130,6 @@ namespace Tesis.Controllers
             if (await _propertyRepo.SaveAllAsync())
                 return NoContent();
 
-
             return BadRequest("Faild to set main photo");
         }
 
@@ -147,6 +137,8 @@ namespace Tesis.Controllers
         [HttpDelete("delete-photo/{photoId}/{propertyId}")]
         public async Task<ActionResult> DeletePhoto(int photoId, int propertyId)
         {
+            //encapsular esta logica en property repository para luego llamar este metodo de 
+            //delete property-photo aqui ene ste metodo y en el metodo de delete property
             var property = await _propertyRepo.GetPropertyByIdAsync(propertyId);
             var photo = property.Photos.FirstOrDefault(ph => ph.Id == photoId);
 
@@ -169,7 +161,5 @@ namespace Tesis.Controllers
 
             return BadRequest("Failed to delete the photos");
         }
-
-
     }
 }
