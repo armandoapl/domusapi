@@ -31,6 +31,9 @@ namespace Tesis.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<AgentDto>>> GetUsers([FromQuery] UserPropertiesParams userParams)
         {
+            var user = await _userRepo.GetUserByUsernameAsync(User.GetUserName());
+            userParams.TitleName = user.UserName;
+
             var users = await _userRepo.GetAgentsAsync(userParams);
 
             Response.AddPaginatioHeader(users.CurrentPage, users.PageSize, users.TotalCount, users.TotalPages);
@@ -159,6 +162,12 @@ namespace Tesis.Controllers
             if (await _userRepo.SaveAllAsync()) return Ok();
 
             return BadRequest("Failed to delete the photos");
+        }
+
+        [HttpGet("get-cities")]
+        public async Task<string[]> GetCities()
+        {
+            return await _userRepo.GetCities();
         }
     }
 }

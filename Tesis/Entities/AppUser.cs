@@ -1,12 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using Tesis.Extensions;
 
 namespace Tesis.Entities
 {
     public class AppUser
-    {
+    {        
         public int Id { get; set; }
         public string UserName { get; set; }
         public byte[] PasswordHash { get; set; }
@@ -22,9 +20,8 @@ namespace Tesis.Entities
         public string Country { get; set; }
         public ICollection<Photo> Photos { get; set; }
         public ICollection<REProperty> Properties { get; set; }
-        //public int GetAge()
-        //{
-        //    return DateOfBirth.CalculateAge();
-        //}
+
+        public ICollection<TrustUser> TrustedbyUsers { get; set; }
+        public ICollection<TrustUser> TrustedUsers { get; set; }
     }
 }

@@ -68,11 +68,12 @@ namespace Tesis.Data
 
         public async Task<PagedList<AgentDto>> GetAgentsAsync(UserPropertiesParams userParams)
         {
-            var query = _context.Users
-                .ProjectTo<AgentDto>(_mapper.ConfigurationProvider)
-                .AsNoTracking();
+            var query = _context.Users.AsQueryable();
+            
+            query = query.Where(u => u.UserName!= userParams.TitleName);
 
-            return await PagedList<AgentDto>.CreateAsync(query, userParams.PageNumber, userParams.PageSize);
+            return await PagedList<AgentDto>.CreateAsync(query.ProjectTo<AgentDto>(_mapper.ConfigurationProvider)
+                .AsNoTracking(), userParams.PageNumber, userParams.PageSize);
         }
 
         public async Task<AgentDto> GetAgentByUsernameAsync(string username)
@@ -82,6 +83,12 @@ namespace Tesis.Data
                 .ProjectTo<AgentDto>(_mapper.ConfigurationProvider).
                 SingleOrDefaultAsync();
         
+        }
+
+        public async Task<string[]> GetCities()
+        {
+            var cities = _context.Users.Select(user => user.City).ToArray();
+            return cities;
         }
     }
 }

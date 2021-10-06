@@ -17,6 +17,8 @@ namespace Tesis.Extensions
                 options.UseSqlServer(config.GetConnectionString("DefaultConnection"));
             });
 
+            services.AddScoped<ITrustRepository, TrustRepository>();
+
             services.Configure<CloudinarySettings>(config.GetSection("CloudinarySettings"));
             services.AddScoped<IPhotoService, PhotoService>();
             /*Repository and its interfaces*/
