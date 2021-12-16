@@ -6124,19 +6124,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\arman\\.nuget\\packages\\": {}
+    "C:\\Users\\Armando\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\arman\\source\\repos\\1a\\tesisproject\\Tesis\\Tesis.csproj",
+      "projectUniqueName": "C:\\Users\\Armando\\source\\repos\\TesisProject\\Tesis\\Tesis.csproj",
       "projectName": "Tesis",
-      "projectPath": "C:\\Users\\arman\\source\\repos\\1a\\tesisproject\\Tesis\\Tesis.csproj",
-      "packagesPath": "C:\\Users\\arman\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\arman\\source\\repos\\1a\\tesisproject\\Tesis\\obj\\",
+      "projectPath": "C:\\Users\\Armando\\source\\repos\\TesisProject\\Tesis\\Tesis.csproj",
+      "packagesPath": "C:\\Users\\Armando\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Armando\\source\\repos\\TesisProject\\Tesis\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\arman\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Armando\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6219,7 +6219,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }
