@@ -218,7 +218,6 @@ C:\Users\arman\source\repos\1a\tesisproject\Tesis\obj\Debug\net5.0\Tesis.csproj.
 C:\Users\arman\source\repos\1a\tesisproject\Tesis\obj\Debug\net5.0\Tesis.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\arman\source\repos\1a\tesisproject\Tesis\obj\Debug\net5.0\Tesis.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\arman\source\repos\1a\tesisproject\Tesis\obj\Debug\net5.0\staticwebassets\Tesis.StaticWebAssets.Manifest.cache
-C:\Users\arman\source\repos\1a\tesisproject\Tesis\obj\Debug\net5.0\staticwebassets\Tesis.StaticWebAssets.xml
 C:\Users\arman\source\repos\1a\tesisproject\Tesis\obj\Debug\net5.0\scopedcss\bundle\Tesis.styles.css
 C:\Users\arman\source\repos\1a\tesisproject\Tesis\obj\Debug\net5.0\Tesis.RazorTargetAssemblyInfo.cache
 C:\Users\arman\source\repos\1a\tesisproject\Tesis\obj\Debug\net5.0\Tesis.csproj.CopyComplete
@@ -226,3 +225,4 @@ C:\Users\arman\source\repos\1a\tesisproject\Tesis\obj\Debug\net5.0\Tesis.dll
 C:\Users\arman\source\repos\1a\tesisproject\Tesis\obj\Debug\net5.0\ref\Tesis.dll
 C:\Users\arman\source\repos\1a\tesisproject\Tesis\obj\Debug\net5.0\Tesis.pdb
 C:\Users\arman\source\repos\1a\tesisproject\Tesis\obj\Debug\net5.0\Tesis.genruntimeconfig.cache
+C:\Users\arman\source\repos\1a\tesisproject\Tesis\bin\Debug\net5.0\Tesis.StaticWebAssets.xml

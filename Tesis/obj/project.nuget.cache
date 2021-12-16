@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "l5wgmP1vjXCXsw6P51jKOP41LN4f3/WMKd27XMsRTJb3RUvxLLSDAeXNH+ww2zyjt/BLIWyDgufQBejPByevog==",
+  "dgSpecHash": "2qQxiqgIn030F8n13CbJemZiYYZgrkZwYhmjQAuwa7BdrTItCMGSS+6dLgcpMSFsjCeTuP3YXqWaJb3dpmZx/w==",
   "success": true,
   "projectFilePath": "C:\\Users\\arman\\source\\repos\\1a\\tesisproject\\Tesis\\Tesis.csproj",
   "expectedPackageFiles": [
@@ -117,7 +117,8 @@
     "C:\\Users\\arman\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\arman\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\arman\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\arman\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    "C:\\Users\\arman\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "C:\\Users\\arman\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512"
   ],
   "logs": []
 }
