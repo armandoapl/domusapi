@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\arman\\source\\repos\\1a\\tesisproject\\Tesis\\Tesis.csproj": {}
+    "C:\\Users\\Armando\\source\\repos\\TesisProject\\Tesis\\Tesis.csproj": {}
   },
   "projects": {
-    "C:\\Users\\arman\\source\\repos\\1a\\tesisproject\\Tesis\\Tesis.csproj": {
+    "C:\\Users\\Armando\\source\\repos\\TesisProject\\Tesis\\Tesis.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\arman\\source\\repos\\1a\\tesisproject\\Tesis\\Tesis.csproj",
+        "projectUniqueName": "C:\\Users\\Armando\\source\\repos\\TesisProject\\Tesis\\Tesis.csproj",
         "projectName": "Tesis",
-        "projectPath": "C:\\Users\\arman\\source\\repos\\1a\\tesisproject\\Tesis\\Tesis.csproj",
-        "packagesPath": "C:\\Users\\arman\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\arman\\source\\repos\\1a\\tesisproject\\Tesis\\obj\\",
+        "projectPath": "C:\\Users\\Armando\\source\\repos\\TesisProject\\Tesis\\Tesis.csproj",
+        "packagesPath": "C:\\Users\\Armando\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Armando\\source\\repos\\TesisProject\\Tesis\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\arman\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Armando\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -89,12 +89,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[5.0.12, 5.0.12]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -103,7 +97,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }
